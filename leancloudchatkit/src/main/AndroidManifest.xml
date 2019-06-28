@@ -26,8 +26,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.LCIMImageActivity"/>
+<<<<<<< HEAD
 
         <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+=======
+        <activity android:name=".activity.LCIMConversationSettingActivity">
+        </activity>
+
+        <receiver android:name="cn.leancloud.push.AVBroadcastReceiver">
+>>>>>>> origin/v5.0.0
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.USER_PRESENT"/>
@@ -46,12 +53,18 @@
             </meta-data>
         </provider>
 
+<<<<<<< HEAD
         <service android:name="com.avos.avoscloud.PushService"/>
 
         <activity android:name=".activity.LCIMConversationDetailActivity">
         </activity>
         <activity android:name=".activity.LCIMUserSelectActivity">
         </activity>
+=======
+        <service android:name="cn.leancloud.push.PushService"/>
+
+
+>>>>>>> origin/v5.0.0
     </application>
 
 </manifest>
